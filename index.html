@@ -8,6 +8,14 @@
 </head>
 <body>
 
+    <div id="historialModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <h2>Historial de Operaciones</h2>
+            <ul id="historialLista"></ul>
+        </div>
+    </div>
+
     <div class="calculadora">
         <div class="pantalla">0</div>
         <div class="botones">
@@ -29,10 +37,20 @@
             <button class="btn" id="igual">=</button>
             <button class="btn" id="division">/</button>
             <button class="btn" id="borrar">C</button>
+            <div class="button-historial">
+                <button id="verHistorial" onclick="abrirModal()">Ver Historial</button>
+            <div id="overlay"></div>
+            </div>
         </div>    
+        
     </div>
+
+    
+    
     
     
     <script src="index.js"></script>
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
